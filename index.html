@@ -309,36 +309,6 @@
         </div>
     </div>
     
-<script>
-        document.getElementById('inscripcionForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const nombre = document.getElementById('nombre').value;
-            const correo = document.getElementById('correo').value;
-            const curso = document.getElementById('curso').value;
-
-            const data = `Nombre: ${nombre}, Correo: ${correo}, Curso: ${curso}\n`;
-
-            // Crear un Blob con los datos
-            const blob = new Blob([data], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-
-            // Crear un enlace para descargar el archivo
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'inscripciones.txt';
-            document.body.appendChild(a);
-            a.click();
-
-            // Limpiar y remover el enlace
-            setTimeout(() => {
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }, 0);
-        });
-    </script>
-
-
 
 <!-- Registration End -->
 
