@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    
                 </div>
                 <a href="index.html" class="btn btn-primary px-4">Inicio</a>
             </div>
@@ -271,8 +271,8 @@
                     <h1 class="mb-4">Reserve su cupo</h1>
                     <p>No pierdas la oportunidad de unirte a nuestros cursos y dar el primer paso hacia un futuro brillante en tecnología. Nuestros cursos están diseñados para proporcionar una experiencia de aprendizaje interactiva y emocionante, ideal para estudiantes de 12 a 15 años.</p>
                     <ul class="list-inline m-0">
-                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Completa el formulario de inscripción.</li>
                         <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Pulsa el boton reservar cupo.</li>
+                        <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Completa el formulario de inscripción.</li>
                         <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Recibirás una confirmación por correo electrónico con todos los detalles.</li>
                     </ul>
                     <a href="index.html" class="btn btn-primary mt-4 py-2 px-4">Inicio</a>
@@ -284,23 +284,15 @@
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
                             <form id="inscripcionForm">
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" id="nombre" name="nombre" placeholder="Nombres y apellidos completos" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" id="correo" name="correo"placeholder="Su Email" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select border-0 px-4" id="curso" name="curso" style="height: 47px;">
-                                        <option selected>Selecciona un Curso</option>
-                                        <option value="1">Curso de Robótica</option>
-                                        <option value="2">Curso de Inteligencia Artificial</option>
-                                        <option value="3">Curso de Programación</option>
-                                    </select>
-                                </div>
+                                
+                                
                                 <div>
-                                    <button class="btn btn-secondary btn-block border-0 py-3" type="submit">Reservar cupo</button>
-                                </div>
+                               <a href="https://forms.gle/ZiEoo2KSCD4BJTcY9" <button target="_blank" class="btn btn-secondary btn-block border-0 py-3" type="submit">Reservar cupo</button></a>
+  
+                                
+
+
+                             </div>
                             </form>
                         </div>
                     </div>
@@ -309,35 +301,6 @@
         </div>
     </div>
     
-<script>
-        document.getElementById('inscripcionForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const nombre = document.getElementById('nombre').value;
-            const correo = document.getElementById('correo').value;
-            const curso = document.getElementById('curso').value;
-
-            const data = { nombre, correo, curso };
-
-            fetch('https://script.google.com/macros/s/AKfycbwKTebgiqgYawPRZAJqYgrmo1cqPp6uBDfVIFOZBVYCQqq-UzCVXRqgjFqPiPRHOupdfw/exec', {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                alert('Datos enviados exitosamente');
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert('Error al enviar los datos');
-            });
-        });
-    </script>
-
-
 
 <!-- Registration End -->
 
@@ -346,8 +309,8 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
-                <h1 class="mb-4">Meet Our Teachers</h1>
+                <p class="section-title px-5"><span class="px-2">Nuestros docentes</span></p>
+                <h1 class="mb-4">Conoce a nuestros docentes</h1>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
@@ -356,64 +319,50 @@
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
+                                href="https://wa.me/593998331787"><i class="fab fa-whatsapp"></i></a>
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
+                                href="https://www.facebook.com/PABLOLUZURIAGAM"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                                href="https://www.tiktok.com/@pabloluzuriaga41?_t=8mlSdIumnun&_r=1"><i class="fab fa-tumblr"></i></a>
+                        
                     </div>
-                    <h4>Julia Smith</h4>
-                    <i>Music Teacher</i>
+                    </div>
+                    <h4>Pablo Luzuriaga</h4>
+                    <i>Docente de Robótica</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-2.jpg" alt="" >
+                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="" >
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
+                                href="https://wa.me/593998331787"><i class="fab fa-whatsapp"></i></a>
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
+                                href="https://www.facebook.com/PABLOLUZURIAGAM"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                                href="https://www.tiktok.com/@pabloluzuriaga41?_t=8mlSdIumnun&_r=1"><i class="fab fa-tumblr"></i></a>
                         </div>
                     </div>
-                    <h4>Jhon Doe</h4>
-                    <i>Language Teacher</i>
+                    <h4>Pablo Luzuriaga</h4>
+                    <i>Docente de inteligencia artificial</i>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-3.jpg" alt="" >
+                        <img class="img-fluid w-100" src="img/team-1.jpg" alt="" >
                         <div
                             class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
+                                href="https://wa.me/593998331787"><i class="fab fa-whatsapp"></i></a>
                             <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
+                                href="https://www.facebook.com/PABLOLUZURIAGAM"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
+                                href="https://www.tiktok.com/@pabloluzuriaga41?_t=8mlSdIumnun&_r=1"><i class="fab fa-tumblr"></i></a>
                         </div>
                     </div>
-                    <h4>Mollie Ross</h4>
-                    <i>Dance Teacher</i>
+                    <h4>Pablo Luzuriaga</h4>
+                    <i>Docente de programación</i>
                 </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
-                        <img class="img-fluid w-100" src="img/team-4.jpg" alt="" >
-                        <div
-                            class="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light text-center mr-2 px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light text-center px-0" style="width: 38px; height: 38px;"
-                                href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <h4>Donald John</h4>
-                    <i>Art Teacher</i>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -424,59 +373,59 @@
     <div class="container-fluid py-5">
         <div class="container p-0">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Testimonial</span></p>
-                <h1 class="mb-4">What Parents Say!</h1>
+                <p class="section-title px-5"><span class="px-2">Testimonio</span></p>
+                <h1 class="mb-4">¡Qué dicen los expertos!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
                         <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
+                        "La robótica educativa tiene el poder de involucrar a los estudiantes de una manera que pocos otros métodos pueden. No solo enseña conceptos técnicos y de ingeniería, sino que también promueve habilidades como la resolución de problemas, el pensamiento crítico y la colaboración. Los estudiantes que trabajan con robots a menudo descubren una nueva pasión por la ciencia y la tecnología, lo que puede inspirarlos a seguir carreras en campos STEM. Además, la robótica educativa puede ser particularmente efectiva para atraer a grupos subrepresentados en STEM, como las niñas y las minorías, ofreciendo una entrada accesible y atractiva a estas disciplinas."
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="rounded-circle" src="img/testimonial-1.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
+                            <h5>Dr. Maja Matarić</h5>
+                            <i>Profesora de Ciencias de la Computación en la Universidad del Sur de California (USC)</i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
                         <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
+                        "A través de la robótica educativa, los estudiantes pueden aprender de manera práctica y directa, viendo los resultados de sus esfuerzos en tiempo real. Este enfoque de aprendizaje activo y constructivista es fundamental para el desarrollo de habilidades técnicas y de pensamiento. En el MIT Media Lab, hemos visto cómo la robótica puede transformar la experiencia educativa, haciendo que el aprendizaje sea más interactivo y estimulante. Los proyectos de robótica permiten a los estudiantes experimentar, iterar y mejorar sus ideas, lo que fomenta una mentalidad de crecimiento y una profunda comprensión de los conceptos científicos y matemáticos."
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="rounded-circle" src="img/testimonial-2.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
+                            <h5>Dr. Mitchel Resnick</h5>
+                            <i>Profesor del MIT Media Lab y creador del lenguaje de programación Scratch</i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
                         <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
+                        "La inteligencia artificial está transformando todas las industrias y la forma en que vivimos y trabajamos. En la educación, la IA tiene el potencial de personalizar el aprendizaje para cada estudiante, proporcionando tutoría y retroalimentación adaptativas que se ajustan a sus necesidades individuales. Además, la IA puede ayudar a los educadores a identificar áreas donde los estudiantes están luchando, permitiendo intervenciones más rápidas y efectivas. Enseñar a los estudiantes sobre IA no solo los prepara para futuros trabajos, sino que también les da las herramientas para ser innovadores en cualquier campo que elijan."
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="rounded-circle" src="img/testimonial-3.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
+                            <h5>Dr. Andrew Ng</h5>
+                            <i>Profesor de Ciencias de la Computación en la Universidad de Stanford y cofundador de Coursera</i>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-item px-3">
                     <div class="bg-light shadow-sm rounded mb-4 p-4">
                         <h3 class="fas fa-quote-left text-primary mr-3"></h3>
-                        Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum clita
+                        "La inteligencia artificial representa una de las tecnologías más transformadoras de nuestro tiempo. En educación, la IA puede democratizar el acceso al conocimiento y personalizar la experiencia de aprendizaje para millones de estudiantes en todo el mundo. Sin embargo, es crucial que enseñemos a los estudiantes no solo cómo usar la IA, sino también cómo desarrollar tecnologías de IA de manera ética y responsable. Esto garantizará que los avances en IA beneficien a la sociedad en su conjunto y no solo a unos pocos."
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="rounded-circle" src="img/testimonial-4.jpg" style="width: 70px; height: 70px;" alt="Image">
                         <div class="pl-3">
-                            <h5>Parent Name</h5>
-                            <i>Profession</i>
+                            <h5>Dr. Fei-Fei Li</h5>
+                            <i>Profesora de Ciencias de la Computación en la Universidad de Stanford y codirectora del Stanford Human-Centered AI Institute</i>
                         </div>
                     </div>
                 </div>
@@ -490,22 +439,22 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Latest Blog</span></p>
-                <h1 class="mb-4">Latest Articles From Blog</h1>
+                <p class="section-title px-5"><span class="px-2">Blog</span></p>
+                <h1 class="mb-4">Artículos del blog</h1>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 mb-4">
                     <div class="card border-0 shadow-sm mb-2">
                         <img class="card-img-top mb-2" src="img/blog-1.jpg" alt="">
                         <div class="card-body bg-light text-center p-4">
-                            <h4 class="">Diam amet eos at no eos</h4>
+                            <h4 class="">Proyecto de Brazo Robótico en Curso de Robótica</h4>
                             <div class="d-flex justify-content-center mb-3">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                 <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                             </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
+                            <p>Un brazo robótico controlado electrónicamente es presentado en un curso de robótica, con circuitos y componentes interconectados que permiten a los estudiantes experimentar y aprender sobre automatización y programación.</p>
+                            <a href="index.html" class="btn btn-primary px-4 mx-auto my-2">Inicio</a>
                         </div>
                     </div>
                 </div>
@@ -513,14 +462,14 @@
                     <div class="card border-0 shadow-sm mb-2">
                         <img class="card-img-top mb-2" src="img/blog-2.jpg" alt="">
                         <div class="card-body bg-light text-center p-4">
-                            <h4 class="">Diam amet eos at no eos</h4>
+                            <h4 class="">Montaje de Cinta Transportadora en Proyecto de Robótica</h4>
                             <div class="d-flex justify-content-center mb-3">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                 <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                             </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
+                            <p>Un estudiante trabaja en el ensamblaje de una cinta transportadora casera, utilizando materiales reciclados y componentes electrónicos, como parte de un proyecto educativo de robótica.</p>
+                            <a href="index.html" class="btn btn-primary px-4 mx-auto my-2">Inicio</a>
                         </div>
                     </div>
                 </div>
@@ -528,14 +477,14 @@
                     <div class="card border-0 shadow-sm mb-2">
                         <img class="card-img-top mb-2" src="img/blog-3.jpg" alt="">
                         <div class="card-body bg-light text-center p-4">
-                            <h4 class="">Diam amet eos at no eos</h4>
+                            <h4 class="">Configuración de Circuitos en Proyecto de Robótica</h4>
                             <div class="d-flex justify-content-center mb-3">
                                 <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
                                 <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
                                 <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
                             </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="btn btn-primary px-4 mx-auto my-2">Read More</a>
+                            <p>Un estudiante ajusta conexiones en una placa de pruebas, trabajando en el desarrollo de un sistema electrónico como parte de un proyecto de robótica, utilizando cables y componentes diversos.</p>
+                            <a href="index.html" class="btn btn-primary px-4 mx-auto my-2">Inicio</a>
                         </div>
                     </div>
                 </div>
@@ -550,75 +499,55 @@
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
-                    <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-white">KidKinder</span>
+                    <i class="flaticon-002-bricks"></i>
+                    <span class="text-white">Innovar</span>
                 </a>
-                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.</p>
+                <p>Únete a nosotros y descubre cómo la educación puede ser transformadora, accesible y emocionante.</p>
                 <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                        style="width: 38px; height: 38px;" href="https://wa.me/593998331787"><i class="fab fa-whatsapp"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        style="width: 38px; height: 38px;" href="https://www.facebook.com/PABLOLUZURIAGAM"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                        style="width: 38px; height: 38px;" href="https://www.tiktok.com/@pabloluzuriaga41?_t=8mlSdIumnun&_r=1"><i class="fab fa-tumblr"></i></a>
+                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Get In Touch</h3>
+                <h3 class="text-primary mb-4">Contacto</h3>
                 <div class="d-flex">
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
-                        <h5 class="text-white">Address</h5>
-                        <p>123 Street, New York, USA</p>
+                        <h5 class="text-white">Dirección</h5>
+                        <p>Estocolmo y Londres, Riobamba, Ecuador</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-envelope text-primary"></h4>
                     <div class="pl-3">
-                        <h5 class="text-white">Email</h5>
-                        <p>info@example.com</p>
+                        <h5 class="text-white">Correo electrónico</h5>
+                        <p>pablin20002000@yahoo.com</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-phone-alt text-primary"></h4>
                     <div class="pl-3">
-                        <h5 class="text-white">Phone</h5>
-                        <p>+012 345 67890</p>
+                        <h5 class="text-white">Teléfono</h5>
+                        <p>0998331787</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Quick Links</h3>
+                <h3 class="text-primary mb-4">Links</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Newsletter</h3>
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
-                            required="required" />
-                    </div>
-                    <div>
-                        <button class="btn btn-primary btn-block border-0 py-3" type="submit">Submit Now</button>
-                    </div>
-                </form>
-            </div>
+            
         </div>
         <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed
+                &copy; <a class="text-primary font-weight-bold" href="#">Innovar</a>. All Rights Reserved. Designed
                 by
                 <a class="text-primary font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
             </p>
