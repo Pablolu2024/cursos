@@ -283,7 +283,7 @@
                             <h1 class="text-white m-0">Reserve su cupo</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
-                            <form action="guardar_datos.php" method="post">
+                            <form id="inscripcionForm">
                                 <div class="form-group">
                                     <input type="text" class="form-control border-0 p-4" id="nombre" name="nombre" placeholder="Nombres y apellidos completos" required="required" />
                                 </div>
@@ -309,6 +309,35 @@
         </div>
     </div>
     
+<script>
+        document.getElementById('inscripcionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const curso = document.getElementById('curso').value;
+
+            const data = { nombre, correo, curso };
+
+            fetch('https://script.google.com/macros/s/AKfycbwKTebgiqgYawPRZAJqYgrmo1cqPp6uBDfVIFOZBVYCQqq-UzCVXRqgjFqPiPRHOupdfw/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                alert('Datos enviados exitosamente');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Error al enviar los datos');
+            });
+        });
+    </script>
+
+
 
 <!-- Registration End -->
 
